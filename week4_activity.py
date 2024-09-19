@@ -4,14 +4,26 @@
 ##########################Reviewing somethings
 
 # indexing strings -- slide 4
-my_text = 'this is a text'
+my_text = 'this is a text string '
 result = my_text  #get the index of the letter a
-print(result)
-
+print(result[0:4]) 
+#index slicing is when you get a substring from a string you can get a substring by 
+#specifiying the start and end inex of the substring. the start index is inclusive and the end is exclusive
+print(result.find('text'))
+#find the index of the word text
+print(result[10:14])
+print(result.find('is'))
+print(result[5:7])
+#revers a string 
+print(result[::-1])
+print(result[-1])
+print(result.find('string'))
+print(result[15:-1])
+print(result.find('hancock')) # -1 means it do not exist / not found 
 #get the index of the third letter from the end of the text
-
+print(result[-5])
 # find the index of the letter s
-
+print(result[6])
 ###slide 5
 # string[start:stop:step]
 #example
@@ -19,11 +31,16 @@ print(result)
 # print(text[7:12])  # prints "World"
 text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 # Get the substring CDE and put in a variable
-
+substring=text.find('CDE')
+print(substring)
+substring=text[2:5]
 #get the first letter all the way to the 4th letter
-
+print(text[0:4])
 #get the first letter to the final letter and skip every 3rd letter
-
+print(text[0::1])
+print(text[0::2])
+print(text[0::3])
+print(text[0::4])
 # Built-in methods:
 # Python has a variety of built-in methods to work with substrings.
 
